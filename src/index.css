@@ -56,16 +56,75 @@ body {
   margin-top: 12%;
 }
 
-
 .nav-links {
   text-underline-offset: 1rem;
 }
 
+/* Services */
+/* Services */
+
+.theme {
+  background-color: #1c2531;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.theme .title { 
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.services-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.service {
+  color: #fff;
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.service span {
+  color: #328af0;
+  font-size: 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.service h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.service:hover {
+  background-color: #328af0;
+}
+
+.service:hover span {
+  color: #fff;
+}
 
 @media screen and (max-width: 900px) {
-
   #root {
-    background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
+    background: linear-gradient(
+      rgb(31, 41, 55) 20%,
+      black 20%,
+      rgb(31, 41, 55) 65%,
+      black 25%
+    );
     min-height: 100vh;
   }
 
@@ -114,5 +173,4 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
 }
